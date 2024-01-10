@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Article
+class Content
 {
     private $title;
     private $content;
@@ -20,7 +20,7 @@ class Article
     public function getContent() {
         return $this->content;
     }
-    
+
 }
 
 
