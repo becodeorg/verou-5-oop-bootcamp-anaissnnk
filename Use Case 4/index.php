@@ -4,9 +4,6 @@
 
     require_once 'Student.php';
 
-    $Emi = new Student ("Emi", 100);
-    echo $Emi->getName() . " has a score of " . $Emi->getGrade();
-
     $groupOne = [
         ['name' => 'Emi' , 'grade' => 90],
         ['name' => 'Yolei' , 'grade' => 0],
@@ -33,12 +30,24 @@
         ['name' => 'Meyfire' , 'grade' => 0],
     ];
 
-    // foreach ($groupeOne as $student) {
-    //     $groupeOneAverage = $student['grade'] / 10;
-    //     return $groupeOneAverage;
-    // }
+    $students= [];
+    foreach($groupOne as $studentList) {
+        $student = new Student($studentList['name'], $studentList['grade']);
+        $students[]= $student; 
+    }
 
-    // echo $groupeOneAverage;
+    $groupOneTotal = 0;
+    foreach($students as $student) {
+        $groupOneTotal += $student->getGrade();
+    }
+
+    $numberOfStudentsInGroupOne = count($groupOne);
+    if ($numberOfStudentsInGroupOne > 0) {
+        $averageScore = $groupOneTotal / $numberOfStudentsInGroupOne;
+        echo "The average score of group one is " . $averageScore;
+    } else {
+        echo "No students in group one";
+    }
 
 
 /* 
