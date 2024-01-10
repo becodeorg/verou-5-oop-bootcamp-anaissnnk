@@ -2,6 +2,11 @@
 
     declare(strict_types=1);
 
+    require_once 'Student.php';
+
+    $Emi = new Student ("Emi", 100);
+    echo $Emi->getName() . " has a score of " . $Emi->getGrade();
+
     $groupOne = [
         ['name' => 'Emi' , 'grade' => 90],
         ['name' => 'Yolei' , 'grade' => 0],
@@ -27,6 +32,13 @@
         ['name' => 'Dizad' , 'grade' => 120],
         ['name' => 'Meyfire' , 'grade' => 0],
     ];
+
+    // foreach ($groupeOne as $student) {
+    //     $groupeOneAverage = $student['grade'] / 10;
+    //     return $groupeOneAverage;
+    // }
+
+    // echo $groupeOneAverage;
 
 
 /* 
