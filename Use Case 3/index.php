@@ -15,10 +15,10 @@ class TextBlock
 }
 
 $blogContent = [
-    ['name' => 'article'],
-    ['name' => 'article'],
-    ['name' => 'ad'],
-    ['name' => 'vacancy'],
+    ['name' => 'article', 'title' => 'Article Title'],
+    ['name' => 'article', 'title' => 'Article Title'],
+    ['name' => 'ad', 'title' => 'Ad Title'],
+    ['name' => 'vacancy', 'title' => 'Vacancy Title'],
 ];
 
 print_r($blogContent);
