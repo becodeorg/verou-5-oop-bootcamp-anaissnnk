@@ -8,8 +8,8 @@ require_once 'Vacancies.php';
 
 
 //Article
-$article = new Article ('This is the article title', 'This is the article content');
-echo $article->getTitle() . "<br>" . $article->getContent();
+$article = new Article ('This is the article title', 'This is the article content', true);
+echo $article ->showBreakingNews() . $article->getTitle() . "<br>" . $article->getContent();
 echo "<br>" . "<br>";
 //Ad
 $ad = new Ad ('This is the Ad title', 'This is the ad content');
