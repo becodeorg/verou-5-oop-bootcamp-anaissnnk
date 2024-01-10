@@ -7,7 +7,7 @@ class TextBlock
     public $title;
     public $text;
 
-    public function __construct (string $title, string $text) 
+    public function __construct (string $name, string $title) 
     {
         $this->title = $title;
         $this->text = $text;
@@ -15,10 +15,10 @@ class TextBlock
 }
 
 $blogContent = [
-    ['name' => 'article', 'title' => 'Article Title'],
-    ['name' => 'article', 'title' => 'Article Title'],
-    ['name' => 'ad', 'title' => 'Ad Title'],
-    ['name' => 'vacancy', 'title' => 'Vacancy Title'],
+    ['name' => 'article', 'title' => 'Article Title', 'content' => 'Article content'],
+    ['name' => 'article', 'title' => 'Article Title', 'content' => 'Article content'],
+    ['name' => 'ad', 'title' => 'Ad Title', 'content' => 'Ad content'],
+    ['name' => 'vacancy', 'title' => 'Vacancy Title', 'content' => 'Vacancy content'],
 ];
 
 print_r($blogContent);
