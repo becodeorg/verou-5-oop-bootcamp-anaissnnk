@@ -2,29 +2,14 @@
 
 declare(strict_types=1);
 
-class Article
+require_once 'Content.php';
+
+class Article extends Content
 {
-    private $title;
-    private $content;
-
-    public function __construct (string $title, string $content) 
-    {
-        $this->title = $title;
-        $this->content = $content;
-
+    public function showTitle() {
+        echo $this->getTitle();
     }
 
-    public function getTitle() {
-        return $this->title;
-    }
-
-    public function getContent() {
-        return $this->content;
-    }
-
-    public function generateTitle() {
-        //code to execute
-    }
 }
 
 
