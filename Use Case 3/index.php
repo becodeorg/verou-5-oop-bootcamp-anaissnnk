@@ -10,3 +10,4 @@ $blogContent = [
     ['name' => 'ad', 'title' => 'Ad Title', 'content' => 'Ad content'],
     ['name' => 'vacancy', 'title' => 'Vacancy Title', 'content' => 'Vacancy content'],
 ];
+
